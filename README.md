@@ -10,3 +10,37 @@
     - 동적 가상 클래스 : hover, focus, active
     - 우선순위 : 1th ID, 2th Class, 3th Tag, 0th Inline Style, -1th !important
     
+2. #### Box Model
+    - content, padding, border, margin으로 구성되어 있음
+    - content : 가로는 width, 세로는 height
+    - padding : content와 border 사이의 공간(안쪽여백)
+    - border : 테두리
+    - margin : 요소와 요소사이의 간격(바깥 간격)
+    
+3. #### Box Sizing
+    - 사이즈의 기준이 되는 값
+    - content-box | border-box
+    
+    ```css
+    * {
+      box-sizing : border-box;
+    }
+    ```
+ 
+4. #### Box Type -> Display
+    - Block -> **길막, 면**
+        - Width를 선언하지 않은 경우, width = 부모의 content-box의 100%
+        - 따로 width를 선언한 경우, 남은 공간은 margkn으로 자동 채움
+        - Height를 선언하지 않은 경우, 자식 요소의 height 합 = 부모의 height
+        - `margin-left : auto` : 자동으로 생기는 margin을 왼쪽으로
+        - `margin: 0 auoto`로 가운데 정렬 가능
+        - width, height, padding, border, margkn 전부 사용 가능
+        
+    - Inline -> **흐름, 선**
+        - width, height, *-top, *-bottom 사용 불가
+        
+    - Inline Block
+        - Block & Inline
+        
+5. #### Float
+    - 가로배치를 하기 위해서 사용함
