@@ -44,3 +44,39 @@
         
 5. #### Float
     - 가로배치를 하기 위해서 사용함
+    - float 사용 시, 블럭 요소는 무조건 'BLOCK' 
+    - 그러나 길막 못함 : 자동 width, margin 안생김 + css 깨짐
+    ```css
+      overflow: hidden; // 부모 요소
+      
+      [부모클래스]::after {
+        content: '';
+        display: block; //clear 값은 block에만 사용 가능
+        clear: both;
+      }
+    ```
+   
+6. #### Position
+    - 어떤 종류 & 기준점 확인
+        - static 
+        - relative : 본인 위치 기억·기준
+        - absolute : float랑 비슷, position이 static이 아닌 요소를 기준으로 잡음 (보통 relative로 감쌈)
+        - fixed : viewport 사이즈 기준
+        
+7. #### Flex
+    - 선언 : `display: flex; //부모에게 `
+    - 가로|세로 정렬 : `flex-direction : row | column | row-reverse | column-reverse ;`
+    - 한줄|여러줄 정렬 : `flex-wrap : nowrap | wrap ;`
+    - 메인축 정렬 : `justify-content`
+    - 크로스축 기준 : `align-items(선), align-content(후)`
+    - 순서 : `order`
+    
+8. #### Media Query
+    - 반응형 웹! (HTML View port 선언 + Css Media Query)
+    ```css
+    @media screen and (min-width: 768px) {
+    }
+    ```
+    - vw, vh : 뷰포트 기준 단위
+    
+    
