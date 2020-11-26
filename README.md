@@ -91,3 +91,30 @@
     - `background-size: contain | cover | custom `
     - `background-position: x y `
     
+11. #### Transition
+    - property duration(1,000ms = 1s) [timing-function] [delay]
+    - [timing-function] : ease-in | ease-out | ease-in-out | [cubic-bezier()](https://cubic-bezier.com/#.17,.67,.83,.67)
+    
+12. #### Animation
+    ```css
+    @keyframes [name] {
+      from {
+      }
+      
+      to {
+      }
+    }
+    ```
+    - from-to와 %로 조절 가능
+    - animation-[name, duration, timing-function, delay, iteration-count, direction]
+    
+13. #### Box-shadow
+    - x축 y축 흐린정도 그림자사이즈 색상
+    - [Neumorphism](https://neumorphism.io/#55b9f3)
+    
+14. #### Overflow
+    - visible | auto | scroll | hidden
+    
+15. #### Transform
+    - translate() | scale() | rotate()
+    - 다른 요소들에게 영향 안줌
