@@ -79,4 +79,15 @@
     ```
     - vw, vh : 뷰포트 기준 단위
     
+9. #### Typography
+    - px : 절대단위 || em, rem : 상대단위
+    - em : 실제로 적용된 폰트 사이즈 단위
+    - rem : root em, html에 적용된 폰트 사이즈 
+    
+10. #### background
+    - `background-color : hex | rgb | rgba `
+    - `background-image: url() `
+    - `background-repeat : repeat | no-repeat `
+    - `background-size: contain | cover | custom `
+    - `background-position: x y `
     
