@@ -110,7 +110,7 @@
     
 13. #### Box-shadow
     - x축 y축 흐린정도 그림자사이즈 색상
-    - [Neumorphism](https://neumorphism.io/#55b9f3)
+    - [box shadow generator](https://cssgenerator.org/box-shadow-css-generator.html)
     
 14. #### Overflow
     - visible | auto | scroll | hidden
