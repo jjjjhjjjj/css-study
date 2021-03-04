@@ -26,7 +26,7 @@
       box-sizing : border-box;
     }
     ```
- 
+  
 4. #### Box Type -> Display
     - Block -> **길막, 면**
         - Width를 선언하지 않은 경우, width = 부모의 content-box의 100%
